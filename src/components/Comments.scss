@@ -1,0 +1,85 @@
+.comment {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    padding: 10px 30px 10px 30px;
+    width: 50%;
+    margin-left: 25%;
+    .comment-content{
+        text-align: left;
+        padding: 10px 0px 10px 0px;
+    }
+    &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      .comment-author-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+      }
+      .comment_names_div{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        span{
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 12px;
+        }
+    }
+
+      .comment-actions {
+        margin-left: auto;
+        display: flex;
+  
+        box-icon {
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    &-content {
+      margin-bottom: 10px;
+    }
+  
+    &-footer {
+      display: flex;
+      align-items: center;
+  
+      button {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        padding: 5px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+  
+        span {
+          margin-left: 5px;
+        }
+  
+        &:hover {
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+        }
+  
+        &.like-button {
+          color: blue;
+        }
+  
+        &.dislike-button {
+          color: red;
+        }
+  
+        &.popularity-button {
+          color: orange;
+        }
+      }
+    }
+  }
